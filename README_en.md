@@ -3,12 +3,12 @@ English | [简体中文](README.md) | [हिन्दी](./doc/doc_i18n/README
 <p align="center">
  <img src="./doc/PaddleOCR_log.png" align="middle" width = "600"/>
 <p align="center">
-<p align="left">
+<p align="center">
+    <a href="https://discord.gg/z9xaRVjdbD"><img src="https://img.shields.io/badge/Chat-on%20discord-7289da.svg?sanitize=true" alt="Chat"></a>
     <a href="./LICENSE"><img src="https://img.shields.io/badge/license-Apache%202-dfd.svg"></a>
     <a href="https://github.com/PaddlePaddle/PaddleOCR/releases"><img src="https://img.shields.io/github/v/release/PaddlePaddle/PaddleOCR?color=ffa"></a>
     <a href=""><img src="https://img.shields.io/badge/python-3.7+-aff.svg"></a>
     <a href=""><img src="https://img.shields.io/badge/os-linux%2C%20win%2C%20mac-pink.svg"></a>
-    <a href=""><img src="https://img.shields.io/pypi/format/PaddleOCR?color=c77"></a>
     <a href="https://pypi.org/project/PaddleOCR/"><img src="https://img.shields.io/pypi/dm/PaddleOCR?color=9cf"></a>
     <a href="https://github.com/PaddlePaddle/PaddleOCR/stargazers"><img src="https://img.shields.io/github/stars/PaddlePaddle/PaddleOCR?color=ccf"></a>
 </p>
@@ -27,6 +27,8 @@ PaddleOCR aims to create multilingual, awesome, leading, and practical OCR tools
 
 ## 🚀 Community
 PaddleOCR is being oversight by a [PMC](https://github.com/PaddlePaddle/PaddleOCR/issues/12122). Issues and PRs will be reviewed on a best-effort basis. For a complete overview of PaddlePaddle community, please visit [community](https://github.com/PaddlePaddle/community).
+
+⚠️ Note: The [Issues](https://github.com/PaddlePaddle/PaddleOCR/issues) module is only for reporting program 🐞 bugs, for the rest of the questions, please move to the [Discussions](https://github.com/PaddlePaddle/PaddleOCR/discussions). Please note that if the Issue mentioned is not a bug, it will be moved to the Discussions module.
 
 ## 📣 Recent updates
 - **🔥2023.8.7 Release PaddleOCR[release/2.7](https://github.com/PaddlePaddle/PaddleOCR/tree/release/2.7)**
@@ -119,11 +121,11 @@ PaddleOCR support a variety of cutting-edge algorithms related to OCR, and devel
         - [Mobile](./deploy/lite/readme.md)
         - [Paddle2ONNX](./deploy/paddle2onnx/readme.md)
         - [PaddleCloud](./deploy/paddlecloud/README.md)
-        - [Benchmark](./doc/doc_en/benchmark_en.md)  
+        - [Benchmark](./doc/doc_en/benchmark_en.md)
 - [PP-Structure 🔥](./ppstructure/README.md)
     - [Quick Start](./ppstructure/docs/quickstart_en.md)
     - [Model Zoo](./ppstructure/docs/models_list_en.md)
-    - [Model training](./doc/doc_en/training_en.md)  
+    - [Model training](./doc/doc_en/training_en.md)
         - [Layout Analysis](./ppstructure/layout/README.md)
         - [Table Recognition](./ppstructure/table/README.md)
         - [Key Information Extraction](./ppstructure/kie/README.md)
@@ -136,7 +138,7 @@ PaddleOCR support a variety of cutting-edge algorithms related to OCR, and devel
     - [Text recognition](./doc/doc_en/algorithm_overview_en.md)
     - [End-to-end OCR](./doc/doc_en/algorithm_overview_en.md)
     - [Table Recognition](./doc/doc_en/algorithm_overview_en.md)
-    - [Key Information Extraction](./doc/doc_en/algorithm_overview_en.md)  
+    - [Key Information Extraction](./doc/doc_en/algorithm_overview_en.md)
     - [Add New Algorithms to PaddleOCR](./doc/doc_en/add_new_algorithm_en.md)
 - Data Annotation and Synthesis
     - [Semi-automatic Annotation Tool: PPOCRLabel](https://github.com/PFCCLab/PPOCRLabel/blob/main/README.md)
@@ -188,7 +190,7 @@ PaddleOCR support a variety of cutting-edge algorithms related to OCR, and devel
 <details open>
 <summary>PP-StructureV2</summary>
 
-- layout analysis + table recognition  
+- layout analysis + table recognition
 <div align="center">
     <img src="./ppstructure/docs/table/ppstructure.GIF" width="800">
 </div>
@@ -209,7 +211,7 @@ PaddleOCR support a variety of cutting-edge algorithms related to OCR, and devel
 - RE (Relation Extraction)
 <div align="center">
     <img src="https://user-images.githubusercontent.com/25809855/186094813-3a8e16cc-42e5-4982-b9f4-0134dfb5688d.png" width="600">
-</div>  
+</div>
 
 <div align="center">
     <img src="https://user-images.githubusercontent.com/14270174/185393805-c67ff571-cf7e-4217-a4b0-8b396c4f22bb.jpg" width="600">
@@ -218,11 +220,12 @@ PaddleOCR support a variety of cutting-edge algorithms related to OCR, and devel
 <div align="center">
     <img src="https://user-images.githubusercontent.com/14270174/185540080-0431e006-9235-4b6d-b63d-0b3c6e1de48f.jpg" width="600">
 </div>
+
 ## 🇺🇳 Guideline for New Language Requests
 
 If you want to request a new language support, a PR with 1 following files are needed：
 
-1. In folder [ppocr/utils/dict](./ppocr/utils/dict),
+- In folder [ppocr/utils/dict](./ppocr/utils/dict),
 it is necessary to submit the dict text to this path and name it with `{language}_dict.txt` that contains a list of all characters. Please see the format example from other files in that folder.
 
 If your language has unique elements, please tell me in advance within any way, such as useful links, wikipedia and so on.
